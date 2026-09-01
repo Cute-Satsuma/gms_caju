@@ -1,0 +1,591 @@
+{
+  "source": "APKMirror",
+  "publisher": "Google LLC",
+  "install_order": [
+    "account_manager",
+    "gsf",
+    "play_services",
+    "play_store"
+  ],
+  "notes": [
+    "优先下载 APK，不要下 BUNDLE / .apkm / XAPK（除非本应用之后支持分包）。",
+    "GSF 必须与 ROM 的 Android 大版本一致；直链用 APKPure versionCode=API。",
+    "Play Services / Play Store 直链为 APKPure latest，老系统若装不上请改开页面选低 minAPI 变体。",
+    "APKMirror 在国内常被墙；可改用 APKPure / apkpure.net。安装走 d.apkpure.net 直链（d.apkpure.com 会被 Cloudflare 拦）。",
+    "d.apkpure.net 会 302 到 data.winudf.com。apkpure.com 页面在国内常 403，优先用 .net。"
+  ],
+  "catalogs": {
+    "account_manager": "https://www.apkmirror.com/apk/google-inc/google-account-manager/",
+    "gsf": "https://www.apkmirror.com/apk/google-inc/google-services-framework/",
+    "play_services": "https://www.apkmirror.com/apk/google-inc/google-play-services/",
+    "play_store": "https://www.apkmirror.com/apk/google-inc/google-play-store/"
+  },
+  "packages": {
+    "account_manager": "com.google.android.gsf.login",
+    "gsf": "com.google.android.gsf",
+    "play_services": "com.google.android.gms",
+    "play_store": "com.android.vending"
+  },
+  "shared": {
+    "account_manager": {
+      "version": "7.1.2",
+      "min_android": "6.0",
+      "min_api": 23,
+      "url": "https://www.apkmirror.com/apk/google-inc/google-account-manager/google-account-manager-7-1-2-release/google-account-manager-7-1-2-android-apk-download/",
+      "apk_page": "https://www.apkmirror.com/apk/google-inc/google-account-manager/google-account-manager-7-1-2-release/google-account-manager-7-1-2-android-apk-download/",
+      "apkpure_url": "https://apkpure.com/google-account-manager/com.google.android.gsf.login",
+      "apkpure_net_url": "https://apkpure.net/google-account-manager/com.google.android.gsf.login",
+      "apkpure_download": "https://apkpure.com/google-account-manager/com.google.android.gsf.login/download",
+      "direct": {
+        "all": "https://d.apkpure.com/b/APK/com.google.android.gsf.login?version=latest"
+      }
+    }
+  },
+  "roms": [
+    {
+      "android": "9",
+      "api": 28,
+      "codename": "Pie",
+      "account_manager": {
+        "url": "https://www.apkmirror.com/apk/google-inc/google-account-manager/google-account-manager-7-1-2-release/google-account-manager-7-1-2-android-apk-download/",
+        "apk_page": "https://www.apkmirror.com/apk/google-inc/google-account-manager/google-account-manager-7-1-2-release/google-account-manager-7-1-2-android-apk-download/",
+        "apkpure_url": "https://apkpure.com/google-account-manager/com.google.android.gsf.login",
+        "apkpure_net_url": "https://apkpure.net/google-account-manager/com.google.android.gsf.login",
+        "apkpure_download": "https://apkpure.com/google-account-manager/com.google.android.gsf.login/download",
+        "direct": {
+          "all": "https://d.apkpure.com/b/APK/com.google.android.gsf.login?version=latest"
+        }
+      },
+      "gsf": {
+        "version": "9",
+        "url": "https://www.apkmirror.com/apk/google-inc/google-services-framework/google-services-framework-9-release/",
+        "apk_page": "https://www.apkmirror.com/apk/google-inc/google-services-framework/google-services-framework-9-release/google-services-framework-9-android-apk-download/",
+        "apkpure_url": "https://apkpure.com/google-services-framework/com.google.android.gsf",
+        "apkpure_net_url": "https://apkpure.net/google-services-framework/com.google.android.gsf",
+        "apkpure_download": "https://apkpure.com/google-services-framework/com.google.android.gsf/download",
+        "direct": {
+          "arm64": "https://d.apkpure.com/b/APK/com.google.android.gsf?versionCode=28",
+          "avd_x86_64": "https://d.apkpure.com/b/APK/com.google.android.gsf?versionCode=28"
+        }
+      },
+      "play_services": {
+        "avd_x86_64": "https://www.apkmirror.com/apk/google-inc/google-play-services/variant-%7B%22arches_slug%22%3A%5B%22x86%22%2C%22x86_64%22%5D%2C%22dpis_slug%22%3A%5B%22nodpi%22%5D%2C%22minapi_slug%22%3A%22minapi-28%22%7D/",
+        "arm64": "https://www.apkmirror.com/apk/google-inc/google-play-services/variant-%7B%22arches_slug%22%3A%5B%22arm64-v8a%22%2C%22armeabi-v7a%22%5D%2C%22dpis_slug%22%3A%5B%22nodpi%22%5D%2C%22minapi_slug%22%3A%22minapi-28%22%7D/",
+        "apkpure_url": "https://apkpure.com/google-play-services-app/com.google.android.gms",
+        "apkpure_net_url": "https://apkpure.net/google-play-services-app/com.google.android.gms",
+        "apkpure_download": "https://apkpure.com/google-play-services-app/com.google.android.gms/download",
+        "direct": {
+          "apk": "https://d.apkpure.com/b/APK/com.google.android.gms?version=latest",
+          "xapk": "https://d.apkpure.com/b/XAPK/com.google.android.gms?version=latest",
+          "arm64": "https://d.apkpure.com/b/APK/com.google.android.gms?version=latest",
+          "avd_x86_64": "https://d.apkpure.com/b/APK/com.google.android.gms?version=latest"
+        }
+      },
+      "play_store": {
+        "avd_x86_64": "https://www.apkmirror.com/apk/google-inc/google-play-store/variant-%7B%22arches_slug%22%3A%5B%22arm64-v8a%22%2C%22x86%22%2C%22x86_64%22%5D%2C%22dpis_slug%22%3A%5B%22nodpi%22%5D%2C%22minapi_slug%22%3A%22minapi-24%22%7D/",
+        "arm64": "https://www.apkmirror.com/apk/google-inc/google-play-store/variant-%7B%22minapi_slug%22%3A%22minapi-28%22%7D/",
+        "apkpure_url": "https://apkpure.com/google-play-store-app/com.android.vending",
+        "apkpure_net_url": "https://apkpure.net/google-play-store-app/com.android.vending",
+        "apkpure_download": "https://apkpure.com/google-play-store-app/com.android.vending/download",
+        "direct": {
+          "all": "https://d.apkpure.com/b/APK/com.android.vending?version=latest"
+        },
+        "apk_page": "https://www.apkmirror.com/apk/google-inc/google-play-store/google-play-store-52-8-55-release/google-play-store-52-8-55-24-0-pr-967533532-5-android-apk-download/"
+      }
+    },
+    {
+      "android": "10",
+      "api": 29,
+      "codename": "Q",
+      "account_manager": {
+        "url": "https://www.apkmirror.com/apk/google-inc/google-account-manager/google-account-manager-7-1-2-release/google-account-manager-7-1-2-android-apk-download/",
+        "apk_page": "https://www.apkmirror.com/apk/google-inc/google-account-manager/google-account-manager-7-1-2-release/google-account-manager-7-1-2-android-apk-download/",
+        "apkpure_url": "https://apkpure.com/google-account-manager/com.google.android.gsf.login",
+        "apkpure_net_url": "https://apkpure.net/google-account-manager/com.google.android.gsf.login",
+        "apkpure_download": "https://apkpure.com/google-account-manager/com.google.android.gsf.login/download",
+        "direct": {
+          "all": "https://d.apkpure.com/b/APK/com.google.android.gsf.login?version=latest"
+        }
+      },
+      "gsf": {
+        "version": "10",
+        "url": "https://www.apkmirror.com/apk/google-inc/google-services-framework/google-services-framework-10-release/",
+        "apk_page": "https://www.apkmirror.com/apk/google-inc/google-services-framework/google-services-framework-10-6494331-release/google-services-framework-10-6494331-android-apk-download/",
+        "apkpure_url": "https://apkpure.com/google-services-framework/com.google.android.gsf",
+        "apkpure_net_url": "https://apkpure.net/google-services-framework/com.google.android.gsf",
+        "apkpure_download": "https://apkpure.com/google-services-framework/com.google.android.gsf/download",
+        "direct": {
+          "arm64": "https://d.apkpure.com/b/APK/com.google.android.gsf?versionCode=29",
+          "avd_x86_64": "https://d.apkpure.com/b/APK/com.google.android.gsf?versionCode=29"
+        }
+      },
+      "play_services": {
+        "avd_x86_64": "https://www.apkmirror.com/apk/google-inc/google-play-services/variant-%7B%22arches_slug%22%3A%5B%22x86%22%2C%22x86_64%22%5D%2C%22dpis_slug%22%3A%5B%22nodpi%22%5D%2C%22minapi_slug%22%3A%22minapi-28%22%7D/",
+        "arm64": "https://www.apkmirror.com/apk/google-inc/google-play-services/variant-%7B%22arches_slug%22%3A%5B%22arm64-v8a%22%2C%22armeabi-v7a%22%5D%2C%22dpis_slug%22%3A%5B%22nodpi%22%5D%2C%22minapi_slug%22%3A%22minapi-28%22%7D/",
+        "apkpure_url": "https://apkpure.com/google-play-services-app/com.google.android.gms",
+        "apkpure_net_url": "https://apkpure.net/google-play-services-app/com.google.android.gms",
+        "apkpure_download": "https://apkpure.com/google-play-services-app/com.google.android.gms/download",
+        "direct": {
+          "apk": "https://d.apkpure.com/b/APK/com.google.android.gms?version=latest",
+          "xapk": "https://d.apkpure.com/b/XAPK/com.google.android.gms?version=latest",
+          "arm64": "https://d.apkpure.com/b/APK/com.google.android.gms?version=latest",
+          "avd_x86_64": "https://d.apkpure.com/b/APK/com.google.android.gms?version=latest"
+        }
+      },
+      "play_store": {
+        "avd_x86_64": "https://www.apkmirror.com/apk/google-inc/google-play-store/variant-%7B%22arches_slug%22%3A%5B%22arm64-v8a%22%2C%22x86%22%2C%22x86_64%22%5D%2C%22dpis_slug%22%3A%5B%22nodpi%22%5D%2C%22minapi_slug%22%3A%22minapi-24%22%7D/",
+        "arm64": "https://www.apkmirror.com/apk/google-inc/google-play-store/variant-%7B%22minapi_slug%22%3A%22minapi-29%22%7D/",
+        "apkpure_url": "https://apkpure.com/google-play-store-app/com.android.vending",
+        "apkpure_net_url": "https://apkpure.net/google-play-store-app/com.android.vending",
+        "apkpure_download": "https://apkpure.com/google-play-store-app/com.android.vending/download",
+        "direct": {
+          "all": "https://d.apkpure.com/b/APK/com.android.vending?version=latest"
+        },
+        "apk_page": "https://www.apkmirror.com/apk/google-inc/google-play-store/google-play-store-52-8-55-release/google-play-store-52-8-55-24-0-pr-967533532-5-android-apk-download/"
+      }
+    },
+    {
+      "android": "11",
+      "api": 30,
+      "codename": "R",
+      "account_manager": {
+        "url": "https://www.apkmirror.com/apk/google-inc/google-account-manager/google-account-manager-7-1-2-release/google-account-manager-7-1-2-android-apk-download/",
+        "apk_page": "https://www.apkmirror.com/apk/google-inc/google-account-manager/google-account-manager-7-1-2-release/google-account-manager-7-1-2-android-apk-download/",
+        "apkpure_url": "https://apkpure.com/google-account-manager/com.google.android.gsf.login",
+        "apkpure_net_url": "https://apkpure.net/google-account-manager/com.google.android.gsf.login",
+        "apkpure_download": "https://apkpure.com/google-account-manager/com.google.android.gsf.login/download",
+        "direct": {
+          "all": "https://d.apkpure.com/b/APK/com.google.android.gsf.login?version=latest"
+        }
+      },
+      "gsf": {
+        "version": "11",
+        "url": "https://www.apkmirror.com/apk/google-inc/google-services-framework/google-services-framework-11-release/",
+        "apk_page": "https://www.apkmirror.com/apk/google-inc/google-services-framework/google-services-framework-11-release/google-services-framework-11-9-android-apk-download/",
+        "apkpure_url": "https://apkpure.com/google-services-framework/com.google.android.gsf",
+        "apkpure_net_url": "https://apkpure.net/google-services-framework/com.google.android.gsf",
+        "apkpure_download": "https://apkpure.com/google-services-framework/com.google.android.gsf/download",
+        "direct": {
+          "arm64": "https://d.apkpure.com/b/APK/com.google.android.gsf?versionCode=30",
+          "avd_x86_64": "https://d.apkpure.com/b/APK/com.google.android.gsf?versionCode=30"
+        }
+      },
+      "play_services": {
+        "avd_x86_64": "https://www.apkmirror.com/apk/google-inc/google-play-services/variant-%7B%22arches_slug%22%3A%5B%22x86%22%2C%22x86_64%22%5D%2C%22dpis_slug%22%3A%5B%22nodpi%22%5D%2C%22minapi_slug%22%3A%22minapi-30%22%7D/",
+        "arm64": "https://www.apkmirror.com/apk/google-inc/google-play-services/variant-%7B%22arches_slug%22%3A%5B%22arm64-v8a%22%2C%22armeabi-v7a%22%5D%2C%22dpis_slug%22%3A%5B%22nodpi%22%5D%2C%22minapi_slug%22%3A%22minapi-30%22%7D/",
+        "apkpure_url": "https://apkpure.com/google-play-services-app/com.google.android.gms",
+        "apkpure_net_url": "https://apkpure.net/google-play-services-app/com.google.android.gms",
+        "apkpure_download": "https://apkpure.com/google-play-services-app/com.google.android.gms/download",
+        "direct": {
+          "apk": "https://d.apkpure.com/b/APK/com.google.android.gms?version=latest",
+          "xapk": "https://d.apkpure.com/b/XAPK/com.google.android.gms?version=latest",
+          "arm64": "https://d.apkpure.com/b/APK/com.google.android.gms?version=latest",
+          "avd_x86_64": "https://d.apkpure.com/b/APK/com.google.android.gms?version=latest"
+        }
+      },
+      "play_store": {
+        "avd_x86_64": "https://www.apkmirror.com/apk/google-inc/google-play-store/variant-%7B%22arches_slug%22%3A%5B%22arm64-v8a%22%2C%22x86%22%2C%22x86_64%22%5D%2C%22dpis_slug%22%3A%5B%22nodpi%22%5D%2C%22minapi_slug%22%3A%22minapi-24%22%7D/",
+        "arm64": "https://www.apkmirror.com/apk/google-inc/google-play-store/variant-%7B%22minapi_slug%22%3A%22minapi-30%22%7D/",
+        "apkpure_url": "https://apkpure.com/google-play-store-app/com.android.vending",
+        "apkpure_net_url": "https://apkpure.net/google-play-store-app/com.android.vending",
+        "apkpure_download": "https://apkpure.com/google-play-store-app/com.android.vending/download",
+        "direct": {
+          "all": "https://d.apkpure.com/b/APK/com.android.vending?version=latest"
+        },
+        "apk_page": "https://www.apkmirror.com/apk/google-inc/google-play-store/google-play-store-52-8-55-release/google-play-store-52-8-55-24-0-pr-967533532-5-android-apk-download/"
+      }
+    },
+    {
+      "android": "12",
+      "api": 31,
+      "codename": "S",
+      "account_manager": {
+        "url": "https://www.apkmirror.com/apk/google-inc/google-account-manager/google-account-manager-7-1-2-release/google-account-manager-7-1-2-android-apk-download/",
+        "apk_page": "https://www.apkmirror.com/apk/google-inc/google-account-manager/google-account-manager-7-1-2-release/google-account-manager-7-1-2-android-apk-download/",
+        "apkpure_url": "https://apkpure.com/google-account-manager/com.google.android.gsf.login",
+        "apkpure_net_url": "https://apkpure.net/google-account-manager/com.google.android.gsf.login",
+        "apkpure_download": "https://apkpure.com/google-account-manager/com.google.android.gsf.login/download",
+        "direct": {
+          "all": "https://d.apkpure.com/b/APK/com.google.android.gsf.login?version=latest"
+        }
+      },
+      "gsf": {
+        "version": "12",
+        "variant": "Android 12+",
+        "url": "https://www.apkmirror.com/apk/google-inc/google-services-framework/google-services-framework-12-release/",
+        "apk_page": "https://www.apkmirror.com/apk/google-inc/google-services-framework/google-services-framework-12-release/google-services-framework-12-android-apk-download/",
+        "apkpure_url": "https://apkpure.com/google-services-framework/com.google.android.gsf",
+        "apkpure_net_url": "https://apkpure.net/google-services-framework/com.google.android.gsf",
+        "apkpure_download": "https://apkpure.com/google-services-framework/com.google.android.gsf/download",
+        "direct": {
+          "arm64": "https://d.apkpure.com/b/APK/com.google.android.gsf?versionCode=31",
+          "avd_x86_64": "https://d.apkpure.com/b/APK/com.google.android.gsf?versionCode=31"
+        }
+      },
+      "play_services": {
+        "avd_x86_64": "https://www.apkmirror.com/apk/google-inc/google-play-services/variant-%7B%22arches_slug%22%3A%5B%22x86%22%2C%22x86_64%22%5D%2C%22dpis_slug%22%3A%5B%22nodpi%22%5D%2C%22minapi_slug%22%3A%22minapi-30%22%7D/",
+        "arm64": "https://www.apkmirror.com/apk/google-inc/google-play-services/variant-%7B%22arches_slug%22%3A%5B%22arm64-v8a%22%2C%22armeabi-v7a%22%5D%2C%22dpis_slug%22%3A%5B%22nodpi%22%5D%2C%22minapi_slug%22%3A%22minapi-31%22%7D/",
+        "apkpure_url": "https://apkpure.com/google-play-services-app/com.google.android.gms",
+        "apkpure_net_url": "https://apkpure.net/google-play-services-app/com.google.android.gms",
+        "apkpure_download": "https://apkpure.com/google-play-services-app/com.google.android.gms/download",
+        "direct": {
+          "apk": "https://d.apkpure.com/b/APK/com.google.android.gms?version=latest",
+          "xapk": "https://d.apkpure.com/b/XAPK/com.google.android.gms?version=latest",
+          "arm64": "https://d.apkpure.com/b/APK/com.google.android.gms?version=latest",
+          "avd_x86_64": "https://d.apkpure.com/b/APK/com.google.android.gms?version=latest"
+        }
+      },
+      "play_store": {
+        "avd_x86_64": "https://www.apkmirror.com/apk/google-inc/google-play-store/variant-%7B%22arches_slug%22%3A%5B%22arm64-v8a%22%2C%22x86%22%2C%22x86_64%22%5D%2C%22dpis_slug%22%3A%5B%22nodpi%22%5D%2C%22minapi_slug%22%3A%22minapi-24%22%7D/",
+        "arm64": "https://www.apkmirror.com/apk/google-inc/google-play-store/variant-%7B%22minapi_slug%22%3A%22minapi-31%22%7D/",
+        "apkpure_url": "https://apkpure.com/google-play-store-app/com.android.vending",
+        "apkpure_net_url": "https://apkpure.net/google-play-store-app/com.android.vending",
+        "apkpure_download": "https://apkpure.com/google-play-store-app/com.android.vending/download",
+        "direct": {
+          "all": "https://d.apkpure.com/b/APK/com.android.vending?version=latest"
+        },
+        "apk_page": "https://www.apkmirror.com/apk/google-inc/google-play-store/google-play-store-52-8-55-release/google-play-store-52-8-55-24-0-pr-967533532-5-android-apk-download/"
+      }
+    },
+    {
+      "android": "12L",
+      "api": 32,
+      "codename": "Sv2",
+      "account_manager": {
+        "url": "https://www.apkmirror.com/apk/google-inc/google-account-manager/google-account-manager-7-1-2-release/google-account-manager-7-1-2-android-apk-download/",
+        "apk_page": "https://www.apkmirror.com/apk/google-inc/google-account-manager/google-account-manager-7-1-2-release/google-account-manager-7-1-2-android-apk-download/",
+        "apkpure_url": "https://apkpure.com/google-account-manager/com.google.android.gsf.login",
+        "apkpure_net_url": "https://apkpure.net/google-account-manager/com.google.android.gsf.login",
+        "apkpure_download": "https://apkpure.com/google-account-manager/com.google.android.gsf.login/download",
+        "direct": {
+          "all": "https://d.apkpure.com/b/APK/com.google.android.gsf.login?version=latest"
+        }
+      },
+      "gsf": {
+        "version": "12",
+        "variant": "Android 12L+",
+        "url": "https://www.apkmirror.com/apk/google-inc/google-services-framework/google-services-framework-12-release/",
+        "apk_page": "https://www.apkmirror.com/apk/google-inc/google-services-framework/google-services-framework-12-release/google-services-framework-12-android-apk-download/",
+        "apkpure_url": "https://apkpure.com/google-services-framework/com.google.android.gsf",
+        "apkpure_net_url": "https://apkpure.net/google-services-framework/com.google.android.gsf",
+        "apkpure_download": "https://apkpure.com/google-services-framework/com.google.android.gsf/download",
+        "direct": {
+          "arm64": "https://d.apkpure.com/b/APK/com.google.android.gsf?versionCode=32",
+          "avd_x86_64": "https://d.apkpure.com/b/APK/com.google.android.gsf?versionCode=32"
+        }
+      },
+      "play_services": {
+        "avd_x86_64": "https://www.apkmirror.com/apk/google-inc/google-play-services/variant-%7B%22arches_slug%22%3A%5B%22x86%22%2C%22x86_64%22%5D%2C%22dpis_slug%22%3A%5B%22nodpi%22%5D%2C%22minapi_slug%22%3A%22minapi-30%22%7D/",
+        "arm64": "https://www.apkmirror.com/apk/google-inc/google-play-services/variant-%7B%22arches_slug%22%3A%5B%22arm64-v8a%22%2C%22armeabi-v7a%22%5D%2C%22dpis_slug%22%3A%5B%22nodpi%22%5D%2C%22minapi_slug%22%3A%22minapi-32%22%7D/",
+        "apkpure_url": "https://apkpure.com/google-play-services-app/com.google.android.gms",
+        "apkpure_net_url": "https://apkpure.net/google-play-services-app/com.google.android.gms",
+        "apkpure_download": "https://apkpure.com/google-play-services-app/com.google.android.gms/download",
+        "direct": {
+          "apk": "https://d.apkpure.com/b/APK/com.google.android.gms?version=latest",
+          "xapk": "https://d.apkpure.com/b/XAPK/com.google.android.gms?version=latest",
+          "arm64": "https://d.apkpure.com/b/APK/com.google.android.gms?version=latest",
+          "avd_x86_64": "https://d.apkpure.com/b/APK/com.google.android.gms?version=latest"
+        }
+      },
+      "play_store": {
+        "avd_x86_64": "https://www.apkmirror.com/apk/google-inc/google-play-store/variant-%7B%22minapi_slug%22%3A%22minapi-32%22%7D/",
+        "arm64": "https://www.apkmirror.com/apk/google-inc/google-play-store/variant-%7B%22minapi_slug%22%3A%22minapi-32%22%7D/",
+        "apkpure_url": "https://apkpure.com/google-play-store-app/com.android.vending",
+        "apkpure_net_url": "https://apkpure.net/google-play-store-app/com.android.vending",
+        "apkpure_download": "https://apkpure.com/google-play-store-app/com.android.vending/download",
+        "direct": {
+          "all": "https://d.apkpure.com/b/APK/com.android.vending?version=latest"
+        },
+        "apk_page": "https://www.apkmirror.com/apk/google-inc/google-play-store/google-play-store-52-8-55-release/google-play-store-52-8-55-24-0-pr-967533532-5-android-apk-download/"
+      }
+    },
+    {
+      "android": "13",
+      "api": 33,
+      "codename": "Tiramisu",
+      "account_manager": {
+        "url": "https://www.apkmirror.com/apk/google-inc/google-account-manager/google-account-manager-7-1-2-release/google-account-manager-7-1-2-android-apk-download/",
+        "apk_page": "https://www.apkmirror.com/apk/google-inc/google-account-manager/google-account-manager-7-1-2-release/google-account-manager-7-1-2-android-apk-download/",
+        "apkpure_url": "https://apkpure.com/google-account-manager/com.google.android.gsf.login",
+        "apkpure_net_url": "https://apkpure.net/google-account-manager/com.google.android.gsf.login",
+        "apkpure_download": "https://apkpure.com/google-account-manager/com.google.android.gsf.login/download",
+        "direct": {
+          "all": "https://d.apkpure.com/b/APK/com.google.android.gsf.login?version=latest"
+        }
+      },
+      "gsf": {
+        "version": "13",
+        "url": "https://www.apkmirror.com/apk/google-inc/google-services-framework/google-services-framework-13-release/",
+        "apk_page": "https://www.apkmirror.com/apk/google-inc/google-services-framework/google-services-framework-13-release/google-services-framework-13-android-apk-download/",
+        "apkpure_url": "https://apkpure.com/google-services-framework/com.google.android.gsf",
+        "apkpure_net_url": "https://apkpure.net/google-services-framework/com.google.android.gsf",
+        "apkpure_download": "https://apkpure.com/google-services-framework/com.google.android.gsf/download",
+        "direct": {
+          "arm64": "https://d.apkpure.com/b/APK/com.google.android.gsf?versionCode=33",
+          "avd_x86_64": "https://d.apkpure.com/b/APK/com.google.android.gsf?versionCode=33"
+        }
+      },
+      "play_services": {
+        "avd_x86_64": "https://www.apkmirror.com/apk/google-inc/google-play-services/variant-%7B%22arches_slug%22%3A%5B%22x86%22%2C%22x86_64%22%5D%2C%22dpis_slug%22%3A%5B%22nodpi%22%5D%2C%22minapi_slug%22%3A%22minapi-30%22%7D/",
+        "arm64": "https://www.apkmirror.com/apk/google-inc/google-play-services/variant-%7B%22arches_slug%22%3A%5B%22arm64-v8a%22%2C%22armeabi-v7a%22%5D%2C%22dpis_slug%22%3A%5B%22nodpi%22%5D%2C%22minapi_slug%22%3A%22minapi-33%22%7D/",
+        "apkpure_url": "https://apkpure.com/google-play-services-app/com.google.android.gms",
+        "apkpure_net_url": "https://apkpure.net/google-play-services-app/com.google.android.gms",
+        "apkpure_download": "https://apkpure.com/google-play-services-app/com.google.android.gms/download",
+        "direct": {
+          "apk": "https://d.apkpure.com/b/APK/com.google.android.gms?version=latest",
+          "xapk": "https://d.apkpure.com/b/XAPK/com.google.android.gms?version=latest",
+          "arm64": "https://d.apkpure.com/b/APK/com.google.android.gms?version=latest",
+          "avd_x86_64": "https://d.apkpure.com/b/APK/com.google.android.gms?version=latest"
+        }
+      },
+      "play_store": {
+        "avd_x86_64": "https://www.apkmirror.com/apk/google-inc/google-play-store/variant-%7B%22arches_slug%22%3A%5B%22arm64-v8a%22%2C%22x86%22%2C%22x86_64%22%5D%2C%22dpis_slug%22%3A%5B%22nodpi%22%5D%2C%22minapi_slug%22%3A%22minapi-24%22%7D/",
+        "arm64": "https://www.apkmirror.com/apk/google-inc/google-play-store/variant-%7B%22minapi_slug%22%3A%22minapi-33%22%7D/",
+        "apkpure_url": "https://apkpure.com/google-play-store-app/com.android.vending",
+        "apkpure_net_url": "https://apkpure.net/google-play-store-app/com.android.vending",
+        "apkpure_download": "https://apkpure.com/google-play-store-app/com.android.vending/download",
+        "direct": {
+          "all": "https://d.apkpure.com/b/APK/com.android.vending?version=latest"
+        },
+        "apk_page": "https://www.apkmirror.com/apk/google-inc/google-play-store/google-play-store-52-8-55-release/google-play-store-52-8-55-24-0-pr-967533532-5-android-apk-download/"
+      }
+    },
+    {
+      "android": "14",
+      "api": 34,
+      "codename": "UpsideDownCake",
+      "account_manager": {
+        "url": "https://www.apkmirror.com/apk/google-inc/google-account-manager/google-account-manager-7-1-2-release/google-account-manager-7-1-2-android-apk-download/",
+        "apk_page": "https://www.apkmirror.com/apk/google-inc/google-account-manager/google-account-manager-7-1-2-release/google-account-manager-7-1-2-android-apk-download/",
+        "apkpure_url": "https://apkpure.com/google-account-manager/com.google.android.gsf.login",
+        "apkpure_net_url": "https://apkpure.net/google-account-manager/com.google.android.gsf.login",
+        "apkpure_download": "https://apkpure.com/google-account-manager/com.google.android.gsf.login/download",
+        "direct": {
+          "all": "https://d.apkpure.com/b/APK/com.google.android.gsf.login?version=latest"
+        }
+      },
+      "gsf": {
+        "version": "14",
+        "url": "https://www.apkmirror.com/apk/google-inc/google-services-framework/google-services-framework-14-release/",
+        "apk_page": "https://www.apkmirror.com/apk/google-inc/google-services-framework/google-services-framework-14-13361510-release/google-services-framework-14-13361510-android-apk-download/",
+        "apkpure_url": "https://apkpure.com/google-services-framework/com.google.android.gsf",
+        "apkpure_net_url": "https://apkpure.net/google-services-framework/com.google.android.gsf",
+        "apkpure_download": "https://apkpure.com/google-services-framework/com.google.android.gsf/download",
+        "direct": {
+          "arm64": "https://d.apkpure.com/b/APK/com.google.android.gsf?versionCode=34",
+          "avd_x86_64": "https://d.apkpure.com/b/APK/com.google.android.gsf?versionCode=34"
+        }
+      },
+      "play_services": {
+        "avd_x86_64": "https://www.apkmirror.com/apk/google-inc/google-play-services/variant-%7B%22arches_slug%22%3A%5B%22x86%22%2C%22x86_64%22%5D%2C%22dpis_slug%22%3A%5B%22nodpi%22%5D%2C%22minapi_slug%22%3A%22minapi-30%22%7D/",
+        "arm64": "https://www.apkmirror.com/apk/google-inc/google-play-services/variant-%7B%22arches_slug%22%3A%5B%22arm64-v8a%22%2C%22armeabi-v7a%22%5D%2C%22dpis_slug%22%3A%5B%22nodpi%22%5D%2C%22minapi_slug%22%3A%22minapi-34%22%7D/",
+        "apkpure_url": "https://apkpure.com/google-play-services-app/com.google.android.gms",
+        "apkpure_net_url": "https://apkpure.net/google-play-services-app/com.google.android.gms",
+        "apkpure_download": "https://apkpure.com/google-play-services-app/com.google.android.gms/download",
+        "direct": {
+          "apk": "https://d.apkpure.com/b/APK/com.google.android.gms?version=latest",
+          "xapk": "https://d.apkpure.com/b/XAPK/com.google.android.gms?version=latest",
+          "arm64": "https://d.apkpure.com/b/APK/com.google.android.gms?version=latest",
+          "avd_x86_64": "https://d.apkpure.com/b/APK/com.google.android.gms?version=latest"
+        }
+      },
+      "play_store": {
+        "avd_x86_64": "https://www.apkmirror.com/apk/google-inc/google-play-store/variant-%7B%22arches_slug%22%3A%5B%22arm64-v8a%22%2C%22x86%22%2C%22x86_64%22%5D%2C%22dpis_slug%22%3A%5B%22nodpi%22%5D%2C%22minapi_slug%22%3A%22minapi-24%22%7D/",
+        "arm64": "https://www.apkmirror.com/apk/google-inc/google-play-store/variant-%7B%22minapi_slug%22%3A%22minapi-34%22%7D/",
+        "apkpure_url": "https://apkpure.com/google-play-store-app/com.android.vending",
+        "apkpure_net_url": "https://apkpure.net/google-play-store-app/com.android.vending",
+        "apkpure_download": "https://apkpure.com/google-play-store-app/com.android.vending/download",
+        "direct": {
+          "all": "https://d.apkpure.com/b/APK/com.android.vending?version=latest"
+        },
+        "apk_page": "https://www.apkmirror.com/apk/google-inc/google-play-store/google-play-store-52-8-55-release/google-play-store-52-8-55-24-0-pr-967533532-5-android-apk-download/"
+      }
+    },
+    {
+      "android": "15",
+      "api": 35,
+      "codename": "VanillaIceCream",
+      "account_manager": {
+        "url": "https://www.apkmirror.com/apk/google-inc/google-account-manager/google-account-manager-7-1-2-release/google-account-manager-7-1-2-android-apk-download/",
+        "apk_page": "https://www.apkmirror.com/apk/google-inc/google-account-manager/google-account-manager-7-1-2-release/google-account-manager-7-1-2-android-apk-download/",
+        "apkpure_url": "https://apkpure.com/google-account-manager/com.google.android.gsf.login",
+        "apkpure_net_url": "https://apkpure.net/google-account-manager/com.google.android.gsf.login",
+        "apkpure_download": "https://apkpure.com/google-account-manager/com.google.android.gsf.login/download",
+        "direct": {
+          "all": "https://d.apkpure.com/b/APK/com.google.android.gsf.login?version=latest"
+        }
+      },
+      "gsf": {
+        "version": "15",
+        "url": "https://www.apkmirror.com/apk/google-inc/google-services-framework/google-services-framework-15-release/",
+        "apk_page": "https://www.apkmirror.com/apk/google-inc/google-services-framework/google-services-framework-15-release/google-services-framework-15-android-apk-download/",
+        "apkpure_url": "https://apkpure.com/google-services-framework/com.google.android.gsf",
+        "apkpure_net_url": "https://apkpure.net/google-services-framework/com.google.android.gsf",
+        "apkpure_download": "https://apkpure.com/google-services-framework/com.google.android.gsf/download",
+        "direct": {
+          "arm64": "https://d.apkpure.com/b/APK/com.google.android.gsf?versionCode=35",
+          "avd_x86_64": "https://d.apkpure.com/b/APK/com.google.android.gsf?versionCode=35"
+        }
+      },
+      "play_services": {
+        "avd_x86_64": "https://www.apkmirror.com/apk/google-inc/google-play-services/variant-%7B%22arches_slug%22%3A%5B%22x86%22%2C%22x86_64%22%5D%2C%22dpis_slug%22%3A%5B%22nodpi%22%5D%2C%22minapi_slug%22%3A%22minapi-35%22%7D/",
+        "arm64": "https://www.apkmirror.com/apk/google-inc/google-play-services/variant-%7B%22arches_slug%22%3A%5B%22arm64-v8a%22%2C%22armeabi-v7a%22%5D%2C%22dpis_slug%22%3A%5B%22nodpi%22%5D%2C%22minapi_slug%22%3A%22minapi-35%22%7D/",
+        "apkpure_url": "https://apkpure.com/google-play-services-app/com.google.android.gms",
+        "apkpure_net_url": "https://apkpure.net/google-play-services-app/com.google.android.gms",
+        "apkpure_download": "https://apkpure.com/google-play-services-app/com.google.android.gms/download",
+        "direct": {
+          "apk": "https://d.apkpure.com/b/APK/com.google.android.gms?version=latest",
+          "xapk": "https://d.apkpure.com/b/XAPK/com.google.android.gms?version=latest",
+          "arm64": "https://d.apkpure.com/b/APK/com.google.android.gms?version=latest",
+          "avd_x86_64": "https://d.apkpure.com/b/APK/com.google.android.gms?version=latest"
+        }
+      },
+      "play_store": {
+        "avd_x86_64": "https://www.apkmirror.com/apk/google-inc/google-play-store/variant-%7B%22arches_slug%22%3A%5B%22arm64-v8a%22%2C%22x86%22%2C%22x86_64%22%5D%2C%22dpis_slug%22%3A%5B%22nodpi%22%5D%2C%22minapi_slug%22%3A%22minapi-24%22%7D/",
+        "arm64": "https://www.apkmirror.com/apk/google-inc/google-play-store/variant-%7B%22minapi_slug%22%3A%22minapi-35%22%7D/",
+        "apkpure_url": "https://apkpure.com/google-play-store-app/com.android.vending",
+        "apkpure_net_url": "https://apkpure.net/google-play-store-app/com.android.vending",
+        "apkpure_download": "https://apkpure.com/google-play-store-app/com.android.vending/download",
+        "direct": {
+          "all": "https://d.apkpure.com/b/APK/com.android.vending?version=latest"
+        },
+        "apk_page": "https://www.apkmirror.com/apk/google-inc/google-play-store/google-play-store-52-8-55-release/google-play-store-52-8-55-24-0-pr-967533532-5-android-apk-download/"
+      }
+    },
+    {
+      "android": "16",
+      "api": 36,
+      "codename": "Baklava",
+      "account_manager": {
+        "url": "https://www.apkmirror.com/apk/google-inc/google-account-manager/google-account-manager-7-1-2-release/google-account-manager-7-1-2-android-apk-download/",
+        "apk_page": "https://www.apkmirror.com/apk/google-inc/google-account-manager/google-account-manager-7-1-2-release/google-account-manager-7-1-2-android-apk-download/",
+        "apkpure_url": "https://apkpure.com/google-account-manager/com.google.android.gsf.login",
+        "apkpure_net_url": "https://apkpure.net/google-account-manager/com.google.android.gsf.login",
+        "apkpure_download": "https://apkpure.com/google-account-manager/com.google.android.gsf.login/download",
+        "direct": {
+          "all": "https://d.apkpure.com/b/APK/com.google.android.gsf.login?version=latest"
+        }
+      },
+      "gsf": {
+        "version": "16",
+        "url": "https://www.apkmirror.com/apk/google-inc/google-services-framework/google-services-framework-16-release/",
+        "apk_page": "https://www.apkmirror.com/apk/google-inc/google-services-framework/google-services-framework-16-release/google-services-framework-16-android-apk-download/",
+        "apkpure_url": "https://apkpure.com/google-services-framework/com.google.android.gsf",
+        "apkpure_net_url": "https://apkpure.net/google-services-framework/com.google.android.gsf",
+        "apkpure_download": "https://apkpure.com/google-services-framework/com.google.android.gsf/download",
+        "direct": {
+          "arm64": "https://d.apkpure.com/b/APK/com.google.android.gsf?versionCode=36",
+          "avd_x86_64": "https://d.apkpure.com/b/APK/com.google.android.gsf?versionCode=36"
+        }
+      },
+      "play_services": {
+        "avd_x86_64": "https://www.apkmirror.com/apk/google-inc/google-play-services/variant-%7B%22arches_slug%22%3A%5B%22x86%22%2C%22x86_64%22%5D%2C%22dpis_slug%22%3A%5B%22nodpi%22%5D%2C%22minapi_slug%22%3A%22minapi-35%22%7D/",
+        "arm64": "https://www.apkmirror.com/apk/google-inc/google-play-services/variant-%7B%22arches_slug%22%3A%5B%22arm64-v8a%22%2C%22armeabi-v7a%22%5D%2C%22dpis_slug%22%3A%5B%22nodpi%22%5D%2C%22minapi_slug%22%3A%22minapi-36%22%7D/",
+        "apkpure_url": "https://apkpure.com/google-play-services-app/com.google.android.gms",
+        "apkpure_net_url": "https://apkpure.net/google-play-services-app/com.google.android.gms",
+        "apkpure_download": "https://apkpure.com/google-play-services-app/com.google.android.gms/download",
+        "direct": {
+          "apk": "https://d.apkpure.com/b/APK/com.google.android.gms?version=latest",
+          "xapk": "https://d.apkpure.com/b/XAPK/com.google.android.gms?version=latest",
+          "arm64": "https://d.apkpure.com/b/APK/com.google.android.gms?version=latest",
+          "avd_x86_64": "https://d.apkpure.com/b/APK/com.google.android.gms?version=latest"
+        }
+      },
+      "play_store": {
+        "avd_x86_64": "https://www.apkmirror.com/apk/google-inc/google-play-store/variant-%7B%22arches_slug%22%3A%5B%22arm64-v8a%22%2C%22x86%22%2C%22x86_64%22%5D%2C%22dpis_slug%22%3A%5B%22nodpi%22%5D%2C%22minapi_slug%22%3A%22minapi-24%22%7D/",
+        "arm64": "https://www.apkmirror.com/apk/google-inc/google-play-store/variant-%7B%22minapi_slug%22%3A%22minapi-36%22%7D/",
+        "apkpure_url": "https://apkpure.com/google-play-store-app/com.android.vending",
+        "apkpure_net_url": "https://apkpure.net/google-play-store-app/com.android.vending",
+        "apkpure_download": "https://apkpure.com/google-play-store-app/com.android.vending/download",
+        "direct": {
+          "all": "https://d.apkpure.com/b/APK/com.android.vending?version=latest"
+        },
+        "apk_page": "https://www.apkmirror.com/apk/google-inc/google-play-store/google-play-store-52-8-55-release/google-play-store-52-8-55-24-0-pr-967533532-5-android-apk-download/"
+      }
+    },
+    {
+      "android": "17",
+      "api": 37,
+      "codename": "CinnamonBun",
+      "account_manager": {
+        "url": "https://www.apkmirror.com/apk/google-inc/google-account-manager/google-account-manager-7-1-2-release/google-account-manager-7-1-2-android-apk-download/",
+        "apk_page": "https://www.apkmirror.com/apk/google-inc/google-account-manager/google-account-manager-7-1-2-release/google-account-manager-7-1-2-android-apk-download/",
+        "apkpure_url": "https://apkpure.com/google-account-manager/com.google.android.gsf.login",
+        "apkpure_net_url": "https://apkpure.net/google-account-manager/com.google.android.gsf.login",
+        "apkpure_download": "https://apkpure.com/google-account-manager/com.google.android.gsf.login/download",
+        "direct": {
+          "all": "https://d.apkpure.com/b/APK/com.google.android.gsf.login?version=latest"
+        }
+      },
+      "gsf": {
+        "version": "17",
+        "url": "https://www.apkmirror.com/apk/google-inc/google-services-framework/google-services-framework-17-release/",
+        "apk_page": "https://www.apkmirror.com/apk/google-inc/google-services-framework/google-services-framework-17-release/google-services-framework-17-android-apk-download/",
+        "apkpure_url": "https://apkpure.com/google-services-framework/com.google.android.gsf",
+        "apkpure_net_url": "https://apkpure.net/google-services-framework/com.google.android.gsf",
+        "apkpure_download": "https://apkpure.com/google-services-framework/com.google.android.gsf/download",
+        "direct": {
+          "arm64": "https://d.apkpure.com/b/APK/com.google.android.gsf?versionCode=37",
+          "avd_x86_64": "https://d.apkpure.com/b/APK/com.google.android.gsf?versionCode=37"
+        }
+      },
+      "play_services": {
+        "avd_x86_64": "https://www.apkmirror.com/apk/google-inc/google-play-services/variant-%7B%22arches_slug%22%3A%5B%22x86%22%2C%22x86_64%22%5D%2C%22dpis_slug%22%3A%5B%22nodpi%22%5D%2C%22minapi_slug%22%3A%22minapi-35%22%7D/",
+        "arm64": "https://www.apkmirror.com/apk/google-inc/google-play-services/variant-%7B%22arches_slug%22%3A%5B%22arm64-v8a%22%2C%22armeabi-v7a%22%5D%2C%22dpis_slug%22%3A%5B%22nodpi%22%5D%2C%22minapi_slug%22%3A%22minapi-37%22%7D/",
+        "apkpure_url": "https://apkpure.com/google-play-services-app/com.google.android.gms",
+        "apkpure_net_url": "https://apkpure.net/google-play-services-app/com.google.android.gms",
+        "apkpure_download": "https://apkpure.com/google-play-services-app/com.google.android.gms/download",
+        "direct": {
+          "apk": "https://d.apkpure.com/b/APK/com.google.android.gms?version=latest",
+          "xapk": "https://d.apkpure.com/b/XAPK/com.google.android.gms?version=latest",
+          "arm64": "https://d.apkpure.com/b/APK/com.google.android.gms?version=latest",
+          "avd_x86_64": "https://d.apkpure.com/b/APK/com.google.android.gms?version=latest"
+        }
+      },
+      "play_store": {
+        "avd_x86_64": "https://www.apkmirror.com/apk/google-inc/google-play-store/variant-%7B%22arches_slug%22%3A%5B%22arm64-v8a%22%2C%22x86%22%2C%22x86_64%22%5D%2C%22dpis_slug%22%3A%5B%22nodpi%22%5D%2C%22minapi_slug%22%3A%22minapi-24%22%7D/",
+        "arm64": "https://www.apkmirror.com/apk/google-inc/google-play-store/variant-%7B%22minapi_slug%22%3A%22minapi-37%22%7D/",
+        "apkpure_url": "https://apkpure.com/google-play-store-app/com.android.vending",
+        "apkpure_net_url": "https://apkpure.net/google-play-store-app/com.android.vending",
+        "apkpure_download": "https://apkpure.com/google-play-store-app/com.android.vending/download",
+        "direct": {
+          "all": "https://d.apkpure.com/b/APK/com.android.vending?version=latest"
+        },
+        "apk_page": "https://www.apkmirror.com/apk/google-inc/google-play-store/google-play-store-52-8-55-release/google-play-store-52-8-55-24-0-pr-967533532-5-android-apk-download/"
+      }
+    }
+  ],
+  "updated_at": "2026-08-29",
+  "catalogs_apkpure": {
+    "account_manager": "https://apkpure.com/google-account-manager/com.google.android.gsf.login",
+    "gsf": "https://apkpure.com/google-services-framework/com.google.android.gsf",
+    "play_services": "https://apkpure.com/google-play-services-app/com.google.android.gms",
+    "play_store": "https://apkpure.com/google-play-store-app/com.android.vending"
+  },
+  "catalogs_apkpure_net": {
+    "account_manager": "https://apkpure.net/google-account-manager/com.google.android.gsf.login",
+    "gsf": "https://apkpure.net/google-services-framework/com.google.android.gsf",
+    "play_services": "https://apkpure.net/google-play-services-app/com.google.android.gms",
+    "play_store": "https://apkpure.net/google-play-store-app/com.android.vending"
+  },
+  "catalogs_apkpure_download": {
+    "account_manager": "https://apkpure.com/google-account-manager/com.google.android.gsf.login/download",
+    "gsf": "https://apkpure.com/google-services-framework/com.google.android.gsf/download",
+    "play_services": "https://apkpure.com/google-play-services-app/com.google.android.gms/download",
+    "play_store": "https://apkpure.com/google-play-store-app/com.android.vending/download"
+  },
+  "direct_defaults": {
+    "account_manager": {
+      "all": "https://d.apkpure.com/b/APK/com.google.android.gsf.login?version=latest"
+    },
+    "play_services": {
+      "apk": "https://d.apkpure.com/b/APK/com.google.android.gms?version=latest",
+      "xapk": "https://d.apkpure.com/b/XAPK/com.google.android.gms?version=latest",
+      "arm64": "https://d.apkpure.com/b/APK/com.google.android.gms?version=latest",
+      "avd_x86_64": "https://d.apkpure.com/b/APK/com.google.android.gms?version=latest"
+    },
+    "play_store": {
+      "all": "https://d.apkpure.com/b/APK/com.android.vending?version=latest"
+    }
+  }
+}

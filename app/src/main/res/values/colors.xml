@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ic_launcher_bg">#A6D1FC</color>
+    <color name="seed">#4285F4</color>
+    <color name="icon_blue">#4285F4</color>
+    <color name="icon_red">#EA4335</color>
+    <color name="icon_yellow">#FBBC05</color>
+    <color name="icon_green">#34A853</color>
+</resources>
